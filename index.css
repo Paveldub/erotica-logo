@@ -1,0 +1,265 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #ccc;
+}
+
+.logo {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.logo span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.logo span:before {
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: #000;
+    transform-origin: left;
+    transform: scaleX(0);
+    animation: animate .5s linear forwards;
+}
+
+.logo span:nth-child(1) {
+    transform: rotate(0deg);
+}
+
+.logo span:nth-child(2) {
+    transform: rotate(90deg);
+}
+
+.logo span:nth-child(3) {
+    transform: rotate(180deg);
+}
+
+.logo span:nth-child(4) {
+    transform: rotate(270deg);
+}
+
+
+@keyframes animate{
+    0% {
+        transform: scaleX(0)
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.logo span:nth-child(1):before {
+    animation-delay: .5s;
+}
+
+.logo span:nth-child(2):before {
+    animation-delay: 1s;
+}
+
+.logo span:nth-child(3):before {
+    animation-delay: 1.5s;
+}
+
+.logo span:nth-child(4):before {
+    animation-delay: 2s;
+}
+
+/* erotica logo */
+#Layer_1 {
+    font-size: 50px;
+    width: 100%;
+    height: 100%;
+    font-weight: 600;
+}
+
+@keyframes logo {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#E, #R, #O, #T, #I, #C, #A, #dot, #B, #Y {
+    stroke: #000;
+    stroke-widht: 5px;
+    fill: transparent;
+}
+
+#E, #R, #O, #T, #I, #C, #A, #dot, #B, #Y { 
+    stroke-dasharray: 0px; stroke-dashoffset: 0px;
+}
+
+#E {
+    stroke-dasharray: 80px; stroke-dashoffset: -80px;
+    animation: E-anim .75s linear 0s forwards;
+    animation-delay: 2.3s;
+}
+
+#R {
+    stroke-dasharray: 62px; stroke-dashoffset: -62px; 
+    animation: R-anim .75s linear 0s forwards;
+    animation-delay: 2.3s;
+}
+
+#O{
+    stroke-dasharray: 50px; stroke-dashoffset: -50px; 
+    animation: O-anim .75s linear 0s forwards;
+    animation-delay: 2.3s;
+}
+
+#T {
+    stroke-dasharray: 54px; stroke-dashoffset: -54px; 
+    animation: T-anim .75s linear 0s forwards;
+    animation-delay: 2.3s;
+}
+
+#I {
+    stroke-dasharray: 33px; stroke-dashoffset: -33px; 
+    animation: I-anim .75s linear 0s forwards;
+    animation-delay: 2.3s;
+}
+
+#C {
+    stroke-dasharray: 70px; stroke-dashoffset: -70px; 
+    animation: C-anim .75s linear 0s forwards;
+    animation-delay: 2.3s;
+}
+
+#A {
+    stroke-dasharray: 54px; stroke-dashoffset: -54px; 
+    animation: A-anim .75s linear 0s forwards;
+    animation-delay: 2.3s;
+}
+
+#dot {
+    stroke-dasharray: 8px; stroke-dashoffset: -8px; 
+    animation: dot-anim  .75s linear 0s forwards;
+    animation-delay: 2.3s;
+}
+
+#B {
+    stroke-dasharray: 48px; stroke-dashoffset: -48px; 
+    animation: B-anim .75s linear 0s forwards;
+    animation-delay: 2.3s;
+}
+
+#Y {
+    stroke-dasharray: 56px; stroke-dashoffset: -56px; 
+    animation: Y-anim .75s linear 0s forwards;
+    animation-delay: 2.3s;
+}
+
+@keyframes E-anim {
+    from {
+        stroke-dashoffset: -80px;
+    }
+
+    to {
+        stroke-dashoffset: 0px;
+    }
+}
+
+@keyframes R-anim {
+    from {
+        stroke-dashoffset: -62px
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes O-anim {
+    from {
+        stroke-dashoffset: -50px;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes T-anim {
+    from {
+        stroke-dashoffset: -54px
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes I-anim {
+    from {
+        stroke-dashoffset: -33px
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes C-anim {
+    from {
+        stroke-dashoffset: -70px
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes A-anim {
+    from {
+        stroke-dashoffset: -54px
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes dot-anim {
+    from {
+        stroke-dashoffset: -8px;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes B-anim {
+    from {
+        stroke-dashoffset: -48px;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes Y-anim {
+    from {
+        stroke-dashoffset: -56px;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
