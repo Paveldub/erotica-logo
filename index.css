@@ -103,7 +103,7 @@ section {
 
 #E, #R, #O, #T, #I, #C, #A, #dot, #B, #Y {
     stroke: #000;
-    stroke-widht: 5px;
+    stroke-width: 1.5px;
     fill: transparent;
 }
 
@@ -271,15 +271,6 @@ section {
     }
 }
 
-@keyframes rotation{
-    0% {
-        transform: rotate(0deg)
-    }
-    100% {
-        transform: rotate(360deg)
-    }
-}
-
 .wrapper {
     opacity: 0;
 }
@@ -389,7 +380,7 @@ section {
 }
 
 .set3 {
-    transform: scale(.8) rotateXset(180deg);
+    transform: scale(.8) rotateX(180deg);
     z-index: 10;
     filter: blur(4px); 
 }
