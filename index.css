@@ -40,6 +40,7 @@ section {
     transform-origin: left;
     transform: scaleX(0);
     animation: animate .5s linear forwards;
+    will-change: transform;
 }
 
 .logo span:nth-child(1) {
@@ -114,60 +115,70 @@ section {
 #E {
     stroke-dasharray: 80px; stroke-dashoffset: -80px;
     animation: E-anim .75s linear 0s forwards;
+    will-change: transform;
     animation-delay: 2.3s;
 }
 
 #R {
     stroke-dasharray: 62px; stroke-dashoffset: -62px; 
     animation: R-anim .75s linear 0s forwards;
+    will-change: transform;
     animation-delay: 2.3s;
 }
 
 #O{
     stroke-dasharray: 50px; stroke-dashoffset: -50px; 
     animation: O-anim .75s linear 0s forwards;
+    will-change: transform;
     animation-delay: 2.3s;
 }
 
 #T {
     stroke-dasharray: 54px; stroke-dashoffset: -54px; 
     animation: T-anim .75s linear 0s forwards;
+    will-change: transform;
     animation-delay: 2.3s;
 }
 
 #I {
     stroke-dasharray: 33px; stroke-dashoffset: -33px; 
     animation: I-anim .75s linear 0s forwards;
+    will-change: transform;
     animation-delay: 2.3s;
 }
 
 #C {
     stroke-dasharray: 70px; stroke-dashoffset: -70px; 
     animation: C-anim .75s linear 0s forwards;
+    will-change: transform;
     animation-delay: 2.3s;
 }
 
 #A {
     stroke-dasharray: 54px; stroke-dashoffset: -54px; 
     animation: A-anim .75s linear 0s forwards;
+    will-change: transform;
     animation-delay: 2.3s;
 }
 
 #dot {
     stroke-dasharray: 8px; stroke-dashoffset: -8px; 
     animation: dot-anim  .75s linear 0s forwards;
+    will-change: transform;
     animation-delay: 2.3s;
 }
 
 #B {
     stroke-dasharray: 48px; stroke-dashoffset: -48px; 
     animation: B-anim .75s linear 0s forwards;
+    will-change: transform;
     animation-delay: 2.3s;
 }
 
 #Y {
     stroke-dasharray: 56px; stroke-dashoffset: -56px; 
     animation: Y-anim .75s linear 0s forwards;
+    will-change: transform;
     animation-delay: 2.3s;
 }
 
@@ -301,49 +312,58 @@ section {
 .set div:nth-child(1) {
     left: 20%;
     animation: falling-bras 15s infinite linear;
+    will-change: transform;
     animation-delay: -7s;
 }
 
 .set div:nth-child(2) {
     left: 35%;
     animation: falling-bras 17s infinite linear;
+    will-change: transform;
     animation-delay: -5s;
 }
 
 .set div:nth-child(3) {
     left: 70%;
     animation: falling-bras 12s infinite linear;
+    will-change: transform;
     animation-delay: -3s;
 }
 
 .set div:nth-child(4) {
     left: 0%;
     animation: falling-bras 14s infinite linear;
+    will-change: transform;
     animation-delay: -10s;
 }
 .set div:nth-child(5) {
     left: 85%;
     animation: falling-bras 20s infinite linear;
+    will-change: transform;
     animation-delay: -15s;
 }
 .set div:nth-child(6) {
     left: 50%;
     animation: falling-bras 23s infinite linear;
+    will-change: transform;
     animation-delay: -9s;
 }
 .set div:nth-child(7) {
     left: 10%;
     animation: falling-bras 14s infinite linear;
+    will-change: transform;
 }
 .set div:nth-child(8) {
     left: 60%;
     animation: falling-bras 21s infinite linear;
+    will-change: transform;
     animation-delay: -1s;
 }
 
 .set div:nth-child(9) {
     left: 15%;
     animation: falling-bras 10s infinite linear;
+    will-change: transform;
 }
 
 @keyframes falling-bras {
